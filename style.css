@@ -11,11 +11,17 @@ h1 {
 #menu {
   margin:0px;
   padding:0px;
+  float: right;
 }
 
 #menu li {
+  padding-left: 50px;
   float:left;
   list-style-type:none;
+}
+
+a {
+  text-decoration: none;
 }
 
 img.zoom {
