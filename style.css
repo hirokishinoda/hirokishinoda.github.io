@@ -65,29 +65,39 @@ img.zoom {
     padding: 0;
 }
 
-#coontact {
+#works section {
+    float: left;
+    width: 280px;
+    height: auto;
+    margin-right: 40px;
+}
+
+#works section{
+  float: left;
+  width: 30%;
+  height: auto;
+  margin-right: 5%;
+}
+
+#works section.last {
+    margin-right: 0;
+}
+
+#works section.last {
+    margin-bottom: 0;
+}
+
+#works p{
+  height:auto;
+  height:100px;
+  text-align: left;
+}
+
+#contact {
     max-width: 920px;
     width: 920px;
     margin: 0 auto 130px auto;
     padding: 0;
-}
-
-#mainimg {
-  width:960px;
-  height:350px;
-  float:left;
-  margin:10px 0px 15px 0px;
-}
-
-#contents {
-  width:615px;
-  float:left;
-}
-
-#sidenavi {
-  width:330px;
-  margin-left:15px;
-  float:left;
 }
 
 footer {
