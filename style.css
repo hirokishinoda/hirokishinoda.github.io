@@ -36,7 +36,36 @@ img.zoom {
   height: 100%;
 }
 
+#about {
+    max-width: 920px;
+    width: 920px;
+    margin: 0 auto 130px auto;
+    padding: 0;
+}
+
 #skills {
+    max-width: 920px;
+    width: 920px;
+    margin: 0 auto 130px auto;
+    padding: 0;
+}
+
+#skills li{
+  list-style-type:none;
+}
+
+#skills ul{
+      padding-inline-start: 0px;
+}
+
+#works {
+    max-width: 920px;
+    width: 920px;
+    margin: 0 auto 130px auto;
+    padding: 0;
+}
+
+#coontact {
     max-width: 920px;
     width: 920px;
     margin: 0 auto 130px auto;
