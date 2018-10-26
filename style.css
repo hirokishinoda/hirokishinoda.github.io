@@ -50,12 +50,11 @@ img.zoom {
     padding: 0;
 }
 
-#skills li{
-  list-style-type:none;
-}
-
-#skills ul{
-      padding-inline-start: 0px;
+#works section{
+  float: left;
+  width: 30%;
+  height: auto;
+  margin-right: 5%;
 }
 
 #works {
