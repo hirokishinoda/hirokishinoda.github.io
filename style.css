@@ -124,3 +124,13 @@ ul {
   display: inline-block;
   vertical-align: middle;
 }
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #4499ee;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #3388dd;
+}
