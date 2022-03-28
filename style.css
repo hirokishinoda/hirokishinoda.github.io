@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
+/* main*/
 body{
   width: 100%;
   text-align: center;
-  padding: 0 0 0 0;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 h1 {
@@ -35,6 +36,8 @@ ul {
   padding: 0 0 0 0;
 }
 
+/* items link */
+
 .items_link ul {
   margin: 1em 0 1em 0;
   padding: 0;
@@ -56,9 +59,11 @@ ul {
   vertical-align: middle;
 }
 
+/* about */
+
 .about > img{
   padding: 0 20px 0 0;
-  border-radius: 10%;
+  border-radius: 50%;
   width: 256px;
   vertical-align: middle;
 }
@@ -69,6 +74,8 @@ ul {
   text-align: left;
   vertical-align: middle;
 }
+
+/* skills */
 
 .skills .box {
     width: 660px;
@@ -93,11 +100,12 @@ ul {
 }
 
 .box table{
-  margin: auto;
+  width: 100%;
+  table-layout: fixed;
 }
 
 .box td{
-  padding: 10px 75px 10px 75px;
+  padding: 10px 10px 10px 10px;
 }
 
 .box ul{
@@ -106,31 +114,102 @@ ul {
 }
 
 .box ul li{
-  padding:0 0 10px 0;
+  padding: 0 0 10px 0;
+}
+
+/* works */
+
+.works .works_contents{
+  width: 660px;
+  height: 300px;
+  margin: 20px auto 20px auto;
+  display: grid;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 120px 120px 120px;
+}
+
+.works .works_contents .contents1{
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.works .works_contents .contents2{
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.works .works_contents .contents3{
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.works .works_contents .contents4{
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.works .works_contents .contents5{
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.works .works_contents .contents6{
+  grid-row: 2;
+  grid-column: 3;
+}
+
+/* achivements */
+
+.achievemets .achievements_contents{
+  width: 660px;
+  margin: 20px auto 20px auto;
+}
+
+.timeline > li {
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+}
+
+.timeline-date {
+  width: 110px;
+  float: left;
+  margin-top: 20px;
+}
+
+.timeline-content {
+  width: 75%;
+  float: left;
+  border-left: 3px #e5e5d1 solid;
+  padding-left: 30px;
+}
+
+.timeline-content:before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: gray;
+  position: absolute;
+  left: 106px;
+  top: 24px;
+  border-radius: 100%;
+}
+
+/* contact */
+.contact{
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.contact .contact_contents{
+  display: flex;
+  justify-content: center; 
+}
+
+.contact .contact_contents div{
+  padding: 5px 5px 5px 5px;
 }
 
 .contact .contact_contents img{
   width: 32px;
-  display: block;
-  margin: 0 auto;
-}
-
-.contact .contact_contents .email img{
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.contact .contact_contents .email p{
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.bx-wrapper .bx-pager.bx-default-pager a {
-  background: #4499ee;
-}
-
-.bx-wrapper .bx-pager.bx-default-pager a:hover,
-.bx-wrapper .bx-pager.bx-default-pager a.active,
-.bx-wrapper .bx-pager.bx-default-pager a:focus {
-  background: #3388dd;
 }

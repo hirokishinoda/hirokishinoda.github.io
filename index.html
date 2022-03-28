@@ -4,48 +4,29 @@
   <meta charset="utf8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Portfolio</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./bxslider-4-4.2.12/src/js/jquery.bxslider.js"></script>
-  <link rel="stylesheet" type="text/css" href="./bxslider-4-4.2.12/src/css/jquery.bxslider.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css" />
-
-  <script>
-  jQuery(function($){
-    $(document).ready(function(){
-      $('.bxslider').bxSlider({
-        auto: false,
-        pause:6000,
-        speed:1000,
-        minSlides: 3,
-        maxSlides: 4,
-        slideWidth: 160,
-        slideMargin: 10,
-        pager: true,
-        prevText: '＜',
-        nextText: '＞',
-      });
-    });
-  });
-  </script>
-
-
 </head>
 <body>
 <div id="main">
-  <h1>Hiroki Shinoda</h1>
+  <div class="background_head">
+    <h1>Hiroki Shinoda</h1>
 
-  <div class="items_link">
-    <ul>
-      <li><a href="#about"><img src="./img/human32.svg" class="items_img"> About</a></li>
-      <li><a href="#skills"><img src="./img/idea32.svg" class="items_img"> Skills</a></li>
-      <li><a href="#works"><img src="./img/pc64px.svg" class="items_img"> Works</a></li>
-      <li><a href="#contact"><img src="./img/mail32.svg" class="items_img"> Contact</a></li>
-    </ul>
-  </div>
+    <div class="items_link">
+      <ul>
+        <li><a href="#about"><img src="./img/human32.svg" class="items_img"> About</a></li>
+        <li><a href="#skills"><img src="./img/idea32.svg" class="items_img"> Skills</a></li>
+        <li><a href="#works"><img src="./img/pc64px.svg" class="items_img"> Works</a></li>
+        <li><a href="#achievements"><img src="./img/achieve32.svg" class="items_img"> Achievements</a></li>
+      </ul>
+    </div>
+</div>
 
   <div class="about">
     <h2 id="about"><img src="./img/human64.svg"> About</h2>
-    <img src="./img/identicon.png">
+    <img src="./img/icon.jpg">
     <p>Shinoda Hirokiと申します．</br>
     データサイエンティストを目指して修行中．</br>
     小学生時代にやったポケットモンスターに感動して</br>
@@ -65,9 +46,9 @@
       </p>
       <table>
         <tr>
-          <td>言語</td>
-          <td>使用年数</td>
-          <td>使用用途</td>
+          <td><b>言語</b></td>
+          <td><b>使用年数</b></td>
+          <td><b>使用用途</b></td>
         </tr>
         <tr>
           <td>C言語</td>
@@ -76,7 +57,7 @@
         </tr>
         <tr>
           <td>Python</td>
-          <td>3年</td>
+          <td>5年</td>
           <td>研究等</td>
         </tr>
         <tr>
@@ -101,7 +82,7 @@
       </p>
       <ul>
         <li>基本情報技術者</li>
-        <li>TOEIC 610</li>
+        <li>TOEIC 610 (2018)</li>
       </ul>
     </div>
     <div class="box">
@@ -124,29 +105,103 @@
 
   <div class="works">
     <h2 id="works"><img src="./img/pc64px.svg"> Works</h2>
-    <ul class="bxslider">
-      <li><img src="./img/works/Untitled Diagram-Page-6.jpg"></li>
-      <li><img src="./img/works/breakout.jpg"></li>
-      <li><img src="./img/works/minesweaper.jpg"></li>
-      <li><img src="./img/works/rpg.jpg"></li>
-      <li><img src="./img/works/robots.jpg"></li>
-      <li><img src="./img/works/tetoris.jpg"></li>
-      <li><img src="./img/works/maze_search.jpg"></li>
-      <li><img src="./img/works/rpg_processing.jpg"></li>
-    </ul>
+    <div class="works_contents">
+      <div class="contents1"></div>
+      <div class="contents2"></div>
+      <div class="contents3"></div>
+      <div class="contents4"></div>
+      <div class="contents5"></div>
+      <div class="contents6"></div>
+    </div>
+  </div>
+
+  <div class="achievemets">
+    <h2 id="achievements"><img src="./img/achieve64.svg"> Achievements</h2>
+    <div class="achievements_contents">
+      <ul class="timeline">
+        <li>
+          <p class="timeline-date">2015年4月</p>
+          <div class="timeline-content">
+            <h3>工業高等専門学校 情報工学科　入学</h3>
+          </div>
+        </li>
+        <li>
+          <p class="timeline-date">2019年8月</p>
+          <div class="timeline-content">
+            <a href="https://www.ieice.org/publications/conferences/summary.php?id=CONF0000123837&expandable=1&ConfCd=2019S&session_num=A-19&lecture_number=A-19-15&year=2019&conf_type=S">
+              <h3>電子情報通信学会 2019年 ソサイエティ大会<br>LSTMを用いた降雨量データの欠損補間</h3>
+            </a>
+          </div>
+        </li>
+        <li>
+          <p class="timeline-date">2020年3月</p>
+          <div class="timeline-content">
+            <a href="https://ci.nii.ac.jp/naid/170000183037/">
+              <h3>情報処理学会 第82回 全国大会<br>Convolutional LSTMを用いた降雨量データの欠損補間</h3>
+            </a>
+          </div>
+        </li>
+        <li>
+          <p class="timeline-date">2020年3月</p>
+          <div class="timeline-content">
+            <a href="https://www.bosai.go.jp/ihub/news/2019/contest_2019_lst_kekka.html">
+              <h3>第2回地域防災力向上チャレンジ 最優秀賞</h3>
+            </a>
+          </div>
+        </li>
+        <li>
+          <p class="timeline-date">2020年3月</p>
+          <div class="timeline-content">
+            <h3>工業高等専門学校 情報工学科 卒業</h3>
+          </div>
+        </li>
+        <li>
+          <p class="timeline-date">2020年4月</p>
+          <div class="timeline-content">
+            <h3>技術科学大学 情報・知能工学課程 入学</h3>
+          </div>
+        </li>
+        <li>
+          <p class="timeline-date">2022年3月</p>
+          <div class="timeline-content">
+            <a href="https://cms.dbsj.org/deim2022/participant/?channel=paper&id=C23-2">
+              <h3>DEIM2022<br>LSTM Blockを用いたサッカー動画における動作分類</h3>
+            </a>
+          </div>
+        </li>
+        <li>
+          <p class="timeline-date">2022年3月</p>
+          <div class="timeline-content">
+            <h3>技術科学大学 情報・知能工学課程 卒業</h3>
+          </div>
+        </li>
+        <li>
+          <p class="timeline-date">2022年4月</p>
+          <div class="timeline-content">
+            <h3>技術科学大学 情報・知能工学専攻 入学</h3>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <div class="contact">
-    <h2 id="contact"><img src="./img/mail64.svg"> Contact</h2>
     <div class="contact_contents">
-    <div class="email">
-      <img src="./img/mail32.svg"> <p>progac27jhisi@gmail.com</p>
-    </div>
-    <div class="github_url">
-      <a href="https://github.com/hirokishinoda">
-        <img src="./img/GitHub-Mark/PNG/GitHub-Mark-32px.png">
-      </a>
-    </div>
+      <div class="email">
+        <a href="mailto:progac27jhisi@gmail.com">
+          <img src="./img/mail32.svg">
+        </a>
+      </div>
+      <div class="github_url">
+        <a href="https://github.com/hirokishinoda">
+          <img src="./img/GitHub-Mark-32px.png"> 
+        </a>
+      </div>
+      <div class="kaggle_url">
+        <a href="https://www.kaggle.com/hirokishinoda">
+          <img src="./img/kaggle_icon.png">
+        </a>
+      </div>
     </div>
   </div>
 </div>
