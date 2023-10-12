@@ -13,6 +13,7 @@ import GlobalCSS from 'components/GlobalCSS';
 import { ThemeProvider } from '@emotion/react';
 import { createTheme } from '@mui/material';
 import { ColorConstants } from 'types/color';
+import Top from 'features/Top/components/Top';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -40,6 +41,7 @@ root.render(
     <GlobalCSS/>
     <ThemeProvider theme={theme}>
       <Header/>
+      <Top/>
       <About/>
       <Works/>
       <Achievements/>
