@@ -1,35 +1,31 @@
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import { Box, Button } from '@mui/material';
-import { FontSizeConstants } from 'types/font';
+
 import HeaderLines from './HeaderLines';
+import Navigation from './Navigation';
 
 const Header = () => {
-        
-    const navItems : Array<String> = ["About", "Works", "Achievements", "Contact"];
+    const navItems : Array<string> = ["About", "Works", "Achievements", "Contact"];
+
+    const appBarCSS = css`
+        box-shadow : none;
+        height     : 140px;
+    `;
+
+    const toolBarCSS = css`
+        height         : 100%;
+        display        : flex;
+        justify-content: flex-end;
+        align-items    : flex-end;
+    `;
 
     return (
-    <AppBar position="static" 
-            color='secondary' 
-            sx={{ boxShadow : 0,
-                  height    : "140px"}}>
+    <AppBar position="static" color='secondary' css={appBarCSS}>
         <HeaderLines/>
-        <Toolbar sx={{display: "flex",
-                      justifyContent: "flex-end",
-                      alignItems: "flex-end",
-                      height: "100%"}}>
-            <Box sx={{marginRight: "50px",
-                      marginBottom: "10px"}}>
-                {navItems.map(item => {
-                    return (
-                        <Button key={item} 
-                                sx={{color: "secondary.contrastText", 
-                                    fontSize: FontSizeConstants.NORMAL}}>
-                            {item}
-                        </Button>
-                    );
-                })}
-            </Box>
+        <Toolbar css={toolBarCSS}>
+            <Navigation navItems={navItems}/>
         </Toolbar>
     </AppBar>
     );

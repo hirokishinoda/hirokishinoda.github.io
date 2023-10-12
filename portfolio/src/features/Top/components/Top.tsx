@@ -1,15 +1,16 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
+import { Box } from "@mui/material";
+
 import BackGroundImage from "./BackGroundImage";
 import WelcomeText from "./Text";
-import Triangle from "./Triangle";
 
 const Top = () => {
     return (
-        <div css={css`position:relative;`}>
+        <Box component="div" css={css`position:relative;`}>
             <BackGroundImage/>
             <WelcomeText/>
-        </div>
+        </Box>
     );
 }
 

@@ -33,6 +33,21 @@ const theme = createTheme({
       dark : ColorConstants.OMESHIONANDO,
       contrastText: ColorConstants.SAKURA
     }
+  },
+  typography: {
+    fontSize: 16,
+    h1:{
+      fontSize: "4.236rem",
+      fontWeight: 400,
+    },
+    h2:{
+      fontSize: "2.618rem",
+      fontWeight: 400,
+    },
+    h3:{
+      fontSize: "1.618rem",
+      fontWeight: 400,
+    }
   }
 });
 

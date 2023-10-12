@@ -1,6 +1,6 @@
-
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
+import { Box } from "@mui/material";
 import { ColorConstants } from "types/color";
 
 const lineCss = css`
@@ -11,7 +11,7 @@ const lineCss = css`
 `;
 
 const Line = () => {
-    return <hr css={lineCss}/>;
+    return <Box component="hr" css={lineCss}/>;
 }
 
 export default Line;

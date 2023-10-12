@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
+import { Box } from "@mui/material";
 import TopBackground from "assets/img/TopBackground.jpg"
 
 const backgroundImageCSS = css`
@@ -13,7 +14,7 @@ const backgroundImageCSS = css`
 `;
 
 const BackGroundImage = () => {
-    return <div css={backgroundImageCSS}/>;
+    return <Box component="div" css={backgroundImageCSS}/>;
 };
 
 export default BackGroundImage;
