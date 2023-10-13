@@ -3,8 +3,8 @@ import { css } from '@emotion/react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 
-import HeaderLines from './HeaderLines';
 import Navigation from './Navigation';
+import TwoLines from 'components/TwoLines';
 
 const Header = () => {
     const navItems : Array<string> = ["About", "Works", "Achievements", "Contact"];
@@ -21,9 +21,11 @@ const Header = () => {
         align-items    : flex-end;
     `;
 
+    const linesCSS = css`margin-top: 10px;`;
+
     return (
     <AppBar position="static" color='secondary' css={appBarCSS}>
-        <HeaderLines/>
+        <TwoLines css={linesCSS}/>
         <Toolbar css={toolBarCSS}>
             <Navigation navItems={navItems}/>
         </Toolbar>

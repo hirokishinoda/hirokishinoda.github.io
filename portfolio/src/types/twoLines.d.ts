@@ -1,0 +1,3 @@
+type twoLinesProps = {
+    className : string
+};
