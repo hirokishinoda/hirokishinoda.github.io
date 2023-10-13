@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 import TopBackground from "assets/img/TopBackground.jpg"
 
 const backgroundImageCSS = css`
-    height: 100vh;
+    height: calc(100vh - 140px);
     top: 0;
     left: 0;
     background-repeat  : no-repeat;
