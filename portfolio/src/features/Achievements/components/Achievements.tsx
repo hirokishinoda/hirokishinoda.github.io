@@ -1,10 +1,10 @@
+import ContentsEntire from "components/ContentsEntire";
+
 const Achievements = () => {
     return (
-        <div>
-            <h2>
-                Achievements
-            </h2>
-        </div>
+        <ContentsEntire title="Achievements">
+            
+        </ContentsEntire>
     );
 }
 
