@@ -3,6 +3,7 @@ import {css} from "@emotion/react";
 import { Typography } from "@mui/material";
 
 import { ColorConstants } from "types/color";
+import { ContentTitleProps } from "types/props";
 
 const textCSS = css`
     width        : fit-content;

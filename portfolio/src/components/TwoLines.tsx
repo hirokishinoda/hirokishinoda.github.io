@@ -1,9 +1,9 @@
 import { Box } from "@mui/material";
 
 import Line from "./Line";
-import { twoLinesProps } from "types/twoLines";
+import { TwoLinesProps } from "types/props";
 
-const TwoLines = (props:twoLinesProps) => {
+const TwoLines = (props:TwoLinesProps) => {
     return (
         <Box component="div" className={props.className}>
             <Line key={"first-line"} />

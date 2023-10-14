@@ -1,7 +1,15 @@
-type ContentTitleProps = {
+import { ReactNode } from "react";
+
+export type ContentTitleProps = {
     title: string
 };
 
-type twoLinesProps = {
+export type TwoLinesProps = {
     className : string
+};
+
+export type ContentsEntireProps = {
+    title      : string,
+    className? : string,
+    children?  : ReactNode
 };

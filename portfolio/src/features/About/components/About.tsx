@@ -1,9 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import {css} from "@emotion/react";
-import { Box } from "@mui/material";
 
-import Contents from "./Contents";
-import ContentsTitle from "components/ContetsTitle";
+import Profile from "./Profile";
+import ContentsEntire from "components/ContentsEntire";
 
 const aboutCSS = css`
     width : 940px;
@@ -13,10 +12,9 @@ const aboutCSS = css`
 
 const About = () => {
     return (
-            <Box component="div" css={aboutCSS}>
-                <ContentsTitle title="About"/>
-                <Contents/>
-            </Box>
+        <ContentsEntire title="About" css={aboutCSS}>
+            <Profile/>
+        </ContentsEntire>
     );
 }
 

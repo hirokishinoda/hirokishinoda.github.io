@@ -15,7 +15,7 @@ const avatarCSS = css`
     width     :300px;
 `;
 
-const Contents = () => {
+const Profile = () => {
     return (
         <Box component="div" css={descriptionCSS}>
             <Avatar src={AvatarImage} css={avatarCSS}/>
@@ -24,4 +24,4 @@ const Contents = () => {
     )
 };
 
-export default Contents;
+export default Profile;
