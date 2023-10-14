@@ -1,10 +1,52 @@
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
+import ContentsEntire from "components/ContentsEntire";
+import Products from "./Products";
+import { ProductProps } from "../types/props";
+
 const Works = () => {
+    const worksCSS = css`
+        width : 940px;
+        height: fit-content;
+        margin: 300px auto;
+    `;
+
+    const productsCSS = css`
+        margin-top   : 50px;
+        column-count : 3;
+    `;
+
+    const products:Array<ProductProps> = [
+        {
+            title      : "ポートフォリオ",
+            description: "ここに説明を記述"
+        },
+        {
+            title      : "タイトル",
+            description: "ここに説明を記述"
+        },
+        {
+            title      : "タイトル",
+            description: "ここに説明を記述"
+        },
+        {
+            title      : "タイトル",
+            description: "ここに説明を記述"
+        },
+        {
+            title      : "タイトル",
+            description: "ここに説明を記述"
+        },
+        {
+            title      : "タイトル",
+            description: "ここに説明を記述"
+        },
+    ];
+
     return (
-        <div>
-            <h2>
-                Works
-            </h2>
-        </div>
+        <ContentsEntire title="Works" css={worksCSS}>
+            <Products products={products} css={productsCSS}/>
+        </ContentsEntire>
     );
 }
 
