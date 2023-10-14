@@ -1,3 +1,0 @@
-type twoLinesProps = {
-    className : string
-};

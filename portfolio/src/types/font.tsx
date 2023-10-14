@@ -1,4 +1,3 @@
-
 export class FontSizeConstants{
     static readonly NORMAL : number = 16;
     static readonly LARGE  : number = 26;
