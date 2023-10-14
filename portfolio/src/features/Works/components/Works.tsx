@@ -5,12 +5,6 @@ import Products from "./Products";
 import { ProductProps } from "../types/props";
 
 const Works = () => {
-    const worksCSS = css`
-        width : 940px;
-        height: fit-content;
-        margin: 300px auto;
-    `;
-
     const productsCSS = css`
         margin-top   : 50px;
         column-count : 3;
@@ -44,7 +38,7 @@ const Works = () => {
     ];
 
     return (
-        <ContentsEntire title="Works" css={worksCSS}>
+        <ContentsEntire title="Works">
             <Products products={products} css={productsCSS}/>
         </ContentsEntire>
     );

@@ -5,7 +5,7 @@ export type ContentTitleProps = {
 };
 
 export type TwoLinesProps = {
-    className : string
+    className? : string
 };
 
 export type ContentsEntireProps = {

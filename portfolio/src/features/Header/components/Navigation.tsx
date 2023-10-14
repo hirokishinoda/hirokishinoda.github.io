@@ -2,12 +2,12 @@
 import { css } from "@emotion/react";
 import { Box, Button } from '@mui/material';
 
-const navigationCSS = css`
-    margin-right : 50px;
-    margin-bottom: 10px;
-`;
-
 const Navigation = (props:NavigationProps) => {
+    const navigationCSS = css`
+        margin-right : 50px;
+        margin-bottom: 10px;
+    `;
+
     return (
         <Box css={navigationCSS}>
             {props.navItems.map(item => {
