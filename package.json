@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@babel/preset-react": "^7.22.15",
-    "@emotion/babel-plugin": "^11.11.0"
+    "@emotion/babel-plugin": "^11.11.0",
+    "@mui/icons-material": "^5.14.13"
   }
 }
