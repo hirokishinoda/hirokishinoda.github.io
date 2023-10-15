@@ -12,7 +12,9 @@ const Navigation = (props:NavigationProps) => {
         <Box css={navigationCSS}>
             {props.navItems.map(item => {
                 return (
-                    <Button key={item} sx={{color: "secondary.contrastText", fontSize: "h3.fontSize"}}>
+                    <Button key={item} 
+                            href={`#${item}`}
+                            sx={{color: "secondary.contrastText", fontSize: "h3.fontSize"}}>
                         {item}
                     </Button>
                 );

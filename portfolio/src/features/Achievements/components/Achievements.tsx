@@ -3,7 +3,7 @@ import AchievementsTimeline from "./AchievementsTimeline";
 
 const Achievements = () => {
     return (
-        <ContentsEntire title="Achievements">
+        <ContentsEntire id="Achievements" title="Achievements">
             <AchievementsTimeline />
         </ContentsEntire>
     );

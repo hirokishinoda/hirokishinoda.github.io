@@ -12,9 +12,9 @@ const ContentsEntire = (props:ContentsEntireProps) => {
         margin: 300px auto;
     `;
 
-    const {title, className, children} = props;
+    const {title, className, children, id} = props;
     return (
-        <Box component="div" css={contentEntireCSS} className={className}>
+        <Box component="div" css={contentEntireCSS} className={className} id={id}>
             <ContentsTitle title={title}/>
             {children}
         </Box>

@@ -2,7 +2,7 @@ import ContentsEntire from "components/ContentsEntire";
 
 const Contact = () => {
     return (
-        <ContentsEntire title="Contact">
+        <ContentsEntire id="Contact" title="Contact">
             
         </ContentsEntire>
     );

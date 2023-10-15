@@ -3,7 +3,7 @@ import ContentsEntire from "components/ContentsEntire";
 
 const About = () => {
     return (
-        <ContentsEntire title="About">
+        <ContentsEntire id="About" title="About">
             <Profile/>
         </ContentsEntire>
     );

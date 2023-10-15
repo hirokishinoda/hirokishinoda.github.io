@@ -11,5 +11,6 @@ export type TwoLinesProps = {
 export type ContentsEntireProps = {
     title      : string,
     className? : string,
-    children?  : ReactNode
+    children?  : ReactNode,
+    id         : string,
 };

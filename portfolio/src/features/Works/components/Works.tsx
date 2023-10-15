@@ -38,7 +38,7 @@ const Works = () => {
     ];
 
     return (
-        <ContentsEntire title="Works">
+        <ContentsEntire id="Works" title="Works">
             <Products products={products} css={productsCSS}/>
         </ContentsEntire>
     );
