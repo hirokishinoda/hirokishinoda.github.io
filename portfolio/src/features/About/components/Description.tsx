@@ -18,7 +18,17 @@ const Description = () => {
     return (
     <Box component="div" color="secondary" css={descriptionBackgroundCSS}>
         <Typography css={descriptionContentCSS}>
-            ここに自己紹介を記述
+            {"Shinoda Hirokiと申します。"}
+            <br/>
+            {"データサイエンティストを目指して修行中。"}
+            <br/>
+            {"小学生時代にやったポケットモンスターDPに感動してゲームを作るために高専に進学。"}
+            <br/>
+            {"高専で情報工学を学ぶ課程で深層学習に興味を持ち、大学・大学院に進学。"}
+            <br/>
+            {"現在は大学院にて深層学習を用いた医療画像からの自動診断について研究中。"}
+            <br/>
+            {"よろしくお願いいたします。"}
         </Typography>
     </Box>
     )
