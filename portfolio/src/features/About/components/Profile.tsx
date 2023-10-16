@@ -7,7 +7,6 @@ import AvatarImage from "assets/img/icon.jpg";
 const Profile = () => {
     const descriptionCSS = css`
         display: flex;
-        margin-top: 50px;
         justify-content: space-between;
     `;
 

@@ -8,6 +8,7 @@ import { ContentTitleProps } from "types/props";
 const ContentsTitle = (props:ContentTitleProps) => {
     const textCSS = css`
         width        : fit-content;
+        margin-bottom: 50px;
         border-bottom: solid 3px ${ColorConstants.OMESHIONANDO};
     `;
 

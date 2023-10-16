@@ -6,7 +6,6 @@ import { ProductProps } from "../types/props";
 
 const Works = () => {
     const productsCSS = css`
-        margin-top   : 50px;
         column-count : 3;
     `;
 
