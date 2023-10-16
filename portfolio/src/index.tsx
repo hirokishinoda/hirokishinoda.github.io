@@ -35,7 +35,14 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontSize: 16,
+    fontSize  : 16,
+    fontFamily: [
+      'Roboto',
+      '"Noto Sans JP"', 
+      '"Helvetica"',
+      'Arial',
+      'sans-serif',
+    ].join(','),
     h1:{
       fontSize: "4.236rem",
       fontWeight: 400,
