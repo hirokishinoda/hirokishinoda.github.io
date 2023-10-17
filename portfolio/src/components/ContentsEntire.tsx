@@ -9,7 +9,7 @@ const ContentsEntire = (props:ContentsEntireProps) => {
     const contentEntireCSS = css`
         width : 940px;
         height: fit-content;
-        margin: 300px auto;
+        margin: 400px auto;
     `;
 
     const {title, className, children, id} = props;
