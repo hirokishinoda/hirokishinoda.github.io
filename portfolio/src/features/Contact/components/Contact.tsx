@@ -3,19 +3,13 @@ import { css } from "@emotion/react";
 
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import KaggleIcon from "assets/img/kaggle_icon.png";
-import { Avatar, Box, Link } from "@mui/material";
-import { ColorConstants } from "types/color";
+import { Box } from "@mui/material";
 
 import ContentsEntire from "components/ContentsEntire";
+import IconLink from "./IconLink";
+import { KaggleIcon } from "./CustomIcon";
 
 const Contact = () => {
-    
-    const iconCSS = css`
-        margin           : 5px;
-        background-color : ${ColorConstants.JINZAMOMI};
-    `;
-
     const divCSS = css`
         display : flex;
     `;
@@ -23,19 +17,15 @@ const Contact = () => {
     return (
         <ContentsEntire id="Contact" title="Contact">
             <Box component="div" css={divCSS}>
-                <Link href="mailto:progac27jhisi@gmail.com" underline="none" target="_blank" rel="noopener noreferrer">
-                    <Avatar css={iconCSS}>
-                        <EmailIcon />
-                    </Avatar>
-                </Link>
-                <Link href="https://github.com/hirokishinoda" underline="none" target="_blank" rel="noopener noreferrer">
-                    <Avatar css={iconCSS}>
-                        <GitHubIcon />
-                    </Avatar>
-                </Link>
-                <Link href="https://www.kaggle.com/hirokishinoda" underline="none" target="_blank" rel="noopener noreferrer">
-                    <Avatar src={KaggleIcon} css={iconCSS} />
-                </Link>  
+                <IconLink link="mailto:progac27jhisi@gmail.com">
+                    <EmailIcon />
+                </IconLink>
+                <IconLink link="https://github.com/hirokishinoda">
+                    <GitHubIcon />   
+                </IconLink>
+                <IconLink link="https://www.kaggle.com/hirokishinoda">
+                    <KaggleIcon />
+                </IconLink>
             </Box>
             
         </ContentsEntire>
