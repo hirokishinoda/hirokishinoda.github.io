@@ -1,41 +1,46 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 
-import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
 
 import { Box, Link, Typography } from "@mui/material";
-import { ColorConstants } from "types/color";
-import { Achievement } from "../types/achievement";
 
-const AchievementsTitle = ({ title } : { title : string }) => {
+import { ColorConstants } from "types/color";
+import { AchievementDescriptionProps, AchievementTitleProps } from "../types/achievement";
+
+const AchievementTitle = ({ title, url } : AchievementTitleProps) => {
     const titleCSS = css`
         height      : 40px;
         line-height : 40px;
+        color       : ${ColorConstants.IMAYOU};
     `;
 
     return (
-        <Typography variant='h3' css={titleCSS}>
-            {title}
-        </Typography>
+        <Link href={url} underline="none" target="_blank" rel="noopener noreferrer">
+            <Typography variant='h3' css={titleCSS}>
+                {title}
+            </Typography>
+        </Link>   
     )
 };
 
-const AchievementsDescription = ({ description } : { description : string }) => {
+const AchievementDescription = ({ description } : AchievementDescriptionProps) => {
     const backgroundBoxCSS = css`
         background-color: ${ColorConstants.OMESHIONANDO};
         border-radius   : 10px;
-        height          : 100px;
         margin          : 10px 0px;
+        height          : 85px;
         overflow        : hidden;
+        display         : flex;
+        align-items     : center;
     `; 
 
     const textCSS = css`
-        margin: 10px;
+        margin     : 10px;
+        white-space: pre-wrap;
     `;
 
     return (
@@ -68,29 +73,4 @@ const TimelineMarks = () => {
     )
 };
 
-const AchievementContent = ({title, description, url} : Achievement) => {
-    const alignLeft = css`
-        &::before{
-            flex   : 0;
-            padding: 0px;
-        }
-    `;
-
-    const contentCSS = css`
-        padding-top : 0px;
-    `;
-
-    return (
-        <TimelineItem css={alignLeft}>
-            <TimelineMarks />
-            <TimelineContent css={contentCSS}>
-                <Link href={url} underline="none" target="_blank" rel="noopener noreferrer">
-                    <AchievementsTitle title={title} />
-                </Link>   
-                <AchievementsDescription description={description} />
-            </TimelineContent>  
-        </TimelineItem>
-    )
-};
-
-export default AchievementContent;
+export {AchievementTitle, AchievementDescription, TimelineMarks};

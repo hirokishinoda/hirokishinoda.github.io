@@ -45,15 +45,18 @@ const theme = createTheme({
     ].join(','),
     h1:{
       fontSize: "4.236rem",
-      fontWeight: 400,
+      fontWeight: 500,
     },
     h2:{
       fontSize: "2.618rem",
-      fontWeight: 400,
+      fontWeight: 500,
     },
     h3:{
       fontSize: "1.618rem",
       fontWeight: 400,
+    },
+    body1:{
+      lineHeight: 1.7
     }
   }
 });
