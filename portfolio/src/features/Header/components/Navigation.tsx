@@ -1,11 +1,18 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { Box, Button } from '@mui/material';
+import { ColorConstants } from "types/color";
 
 const Navigation = (props:NavigationProps) => {
     const navigationCSS = css`
         margin-right : 50px;
         margin-bottom: 10px;
+    `;
+
+    const buttonCSS = css`
+        &:hover {
+            color : ${ColorConstants.JINZAMOMI};
+        }
     `;
 
     return (
@@ -14,7 +21,8 @@ const Navigation = (props:NavigationProps) => {
                 return (
                     <Button key={item} 
                             href={`#${item}`}
-                            sx={{color: "secondary.contrastText", fontSize: "h3.fontSize"}}>
+                            sx={{color: "secondary.contrastText", fontSize: "h3.fontSize"}}
+                            css={buttonCSS}>
                         {item}
                     </Button>
                 );
