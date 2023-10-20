@@ -1,0 +1,49 @@
+{
+    "products" : [
+        {
+            "title"      : "ポートフォリオ",
+            "description": "React+Typescriptの勉強用に作成したWebサイト。UIやCSSのフレームワークとしてMUI + emotionを使っている。",
+            "url"        : "https://hirokishinoda.github.io/"
+        },
+        {
+            "title"      : "会議室管理アプリ",
+            "description": "大学のプロジェクトで作成した会議室を予約をするWebアプリ。期間の関係でデモ版までとなっているがスクラム開発で本格的な開発を行った。",
+            "url"        : "https://github.com/T1-2022/yoyaku"
+        },
+        {
+            "title"      : "手書き数字認識",
+            "description": "深層学習を用いたWebアプリ開発を目的に作成した手書き数字を認識するWebアプリ。Herokuからの以降を検討中。",
+            "url"        : "https://training-cite-dl.herokuapp.com/"
+        },
+        {
+            "title"      : "蔵書管理アプリ",
+            "description": "学生時代のプロジェクトで作成したAndroidアプリ。Ruby（+ rails）のバックエンドを担当。デモ版までとなっている。",
+            "url"        : "https://github.com/ProgramingEnsyu6/LibraryApp"
+        },
+        {
+            "title"      : "迷路アプリ",
+            "description": "Javaで開発したAndroid向け迷路ゲームアプリ。",
+            "url"        : "https://github.com/hirokishinoda/MazeSearchGame"
+        },
+        {
+            "title"      : "テトリス",
+            "description": "テトリスを模倣したゲームアプリ。Javaで作成した。",
+            "url"        : "https://github.com/hirokishinoda/SchoolTetoris"
+        },
+        {
+            "title"      : "Robots",
+            "description": "Robotsを模倣したゲームアプリ。Javaで作成した。",
+            "url"        : "https://github.com/hirokishinoda/Robots"
+        },
+        {
+            "title"      : "RPG",
+            "description": "RPGを模倣したゲームアプリ。Javaで作成した。最初に作成した作品。",
+            "url"        : "https://github.com/hirokishinoda/JavaRPG"
+        },
+        {
+            "title"      : "マインスイーパー",
+            "description": "マインスイーパーを模倣したゲームアプリ。Javaで作成した。",
+            "url"        : "https://github.com/hirokishinoda/M_Sweeper"
+        }
+    ]
+}
